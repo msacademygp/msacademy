@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Academy | Destiny Towards Success</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1a4b8c;
+            --accent-yellow: #ffcc00;
+            --text-dark: #333;
+            --light-bg: #f4f7f6;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--text-dark); }
+        
+        /* Header & Nav */
+        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); sticky; top: 0; z-index: 1000; }
+        .logo-area { display: flex; align-items: center; }
+        .logo-area img { height: 60px; margin-right: 15px; }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--primary-blue); font-weight: bold; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(26, 75, 140, 0.8), rgba(26, 75, 140, 0.8)), url('Banner.jpeg'); 
+                background-size: cover; color: white; padding: 100px 5%; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; color: var(--accent-yellow); }
+        .cta-button { background: var(--accent-yellow); color: #000; padding: 15px 30px; border: none; border-radius: 5px; font-size: 1.2rem; cursor: pointer; text-decoration: none; }
+
+        /* Courses Grid */
+        .section { padding: 50px 5%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--light-bg); padding: 25px; border-radius: 10px; border-top: 5px solid var(--primary-blue); }
+
+        /* Footer */
+        footer { background: #222; color: white; padding: 40px 5%; text-align: center; }
+        .contact-info { margin-top: 20px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="Logo.jpeg" alt="MS Academy Logo">
+        <div>
+            <h2 style="margin:0; color: var(--primary-blue);">MS ACADEMY</h2>
+            <small>Destiny Towards Success</small>
+        </div>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>MS ACADEMY TUITION CENTER</h1>
+    <p style="font-size: 1.5rem;">Admissions Open for Next Academic Year!</p>
+    <p>(ಪ್ರವೇಶಾತಿ ಪ್ರಾರಂಭವಾಗಿದೆ)</p>
+    <br>
+    <a href="tel:7892480263" class="cta-button">Enroll Now</a>
+</section>
+
+<section class="section" id="courses">
+    <h2 style="text-align:center; color: var(--primary-blue);">Courses Offered</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Foundation Classes</h3>
+            <p>6th, 7th, 8th and 9th Standard</p>
+            <ul>
+                <li>All Subjects Covered</li>
+                <li>Starts from 2nd June</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>High School & PU</h3>
+            <p>10th (SSLC/CBSE/ICSE)</p>
+            <p>I PU & II PU (PCMB/PCMC)</p>
+            <ul>
+                <li>Classes start from 10th March</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Competitive Exams</h3>
+            <ul>
+                <li>KCET / NEET</li>
+                <li>College/School Entrance Exams</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: var(--primary-blue); color: white;">
+    <h2 style="text-align:center;">Why Choose MS Academy?</h2>
+    <div class="grid">
+        <div style="text-align: center;"><i class="fas fa-user-tie fa-2x"></i><p>Experienced Faculty</p></div>
+        <div style="text-align: center;"><i class="fas fa-bullseye fa-2x"></i><p>Individual Attention</p></div>
+        <div style="text-align: center;"><i class="fas fa-file-alt fa-2x"></i><p>Frequent Tests</p></div>
+        <div style="text-align: center;"><i class="fas fa-users fa-2x"></i><p>Parent-Teacher Meetings</p></div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> #24, 1st Cross, Munireddy Layout, Garvebhavipalya, Bengaluru - 560068</p>
+        <p><i class="fas fa-phone"></i> +91 7892480263 / 8123176942</p>
+        <p><i class="fab fa-instagram"></i> @msacademy2017</p>
+    </div>
+    <p style="margin-top:40px; font-size: 0.8rem;">&copy; 2024 MS Academy Tuition Center. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
